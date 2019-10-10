@@ -1,6 +1,11 @@
 body {
     text-align: center;
-    background-color: burgundy;
-    /*font-family: 'Courier New', Courier, monospace;
-    color: white;*/
+    background-color: rgb(39, 39, 39);
+    font-family: Consolas;
+    color: white;
+}
+
+#display {
+    width: 400px;
+    height: 400px; 
 }
