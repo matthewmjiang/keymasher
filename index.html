@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Let's get a textbox to work</title>
+        <title>keymasher</title>
         <script async src="./index.js"></script>
-        <link rel="stylesheet" href="styles.css"
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Overpass+Mono&display=swap" rel="stylesheet">
     </head>
+
     <body>
-        <h1>Hello, world!</h1>
-        <h4 id = 'date'></h4>
-        <p>Enter a word: 
-            <input type="text" id="user_input" placeholder="Boo">
-        </p>
-        <br/>
-        
-        <p>Saved words: <br>
-        <textarea id="display"></textarea>
-        </p>
+        <main>
+            <div class="box1">
+                <!-- <div id= "title">keymasher</div> -->
+                <h2>keymasher</h2>
+                <h4 id = 'date'></h4>
+            </div>
+
+            <div class="box2">
+                <div class="info">
+                    <div id="timer">60</div>
+                    <div id="acc_wpm">ACC: ## WPM: ##</div>
+                </div>
+    
+                <div id = "animate">
+                     <textarea id="words" disabled></textarea>
+                </div>
+                    <!-- <div id = "wrong"></div> -->
+                <br>
+                <div id="display"></div>
+            </div>
+            
+            <!-- <div class="box3">information</div> -->
+            <a href="">github</a>
+        </main>
         
     </body>
 </html>

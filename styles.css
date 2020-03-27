@@ -1,11 +1,168 @@
-body {
-    text-align: center;
-    background-color: rgb(39, 39, 39);
-    font-family: Consolas;
-    color: white;
+:root {
+    /* font-size: 16px; */
+    /* font-family: 'Overpass Mono', monospace; */
+    --text-primary: white;
+    --bg: rgb(39, 39, 39);
+    --width: 600px;
+
 }
 
+
+html, body {
+    /* margin: 0; */
+    /* margin: auto; */
+    height: 95%;
+    /* padding: 0; */
+    /* text-align: center; */
+    background-color: var(--bg);
+    /* font-family: Consolas; */
+    font-family: 'Overpass Mono', monospace;
+    color: var(--text-primary);
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--text-primary);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+main {
+    /* margin: auto; */
+    /* margin-bottom: 5rem; */
+    /* padding: 1rem; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box1 {
+    text-align: center;
+    /* background-color: red; */
+}
+
+#title {
+
+}
+
+.info {
+    margin: auto;
+    width: var(--width);
+    display: flex;
+    justify-content: space-between;
+}
+
+#timer {
+    /* margin: auto;
+    position: relative;
+    right: 290px; */
+}
+
+/* just a div that wraps around the words textbox */
+#animate {
+    width: 600px;
+    height: 40px;
+    /* margin: auto; */
+    /* position: absolute; */
+    /* background-color: blue; */
+}
+/* so we can add a highlight to the first word */
+#animate::after {
+    position: relative;
+    bottom: 12px;
+    left: 4px;
+    display: block;
+    content: '';
+    width: 15px;
+    height: 2px;
+    /* background-color: red; */
+    animation: cursor_blink .5s alternate infinite;
+}
+
+@keyframes cursor_blink {
+    /* 0% {background-color: black;} */
+    100% {background-color: white;}
+}
+/*
+#wrong {
+    width: 600px;
+    height: 40px;
+    margin: auto;
+    position: relative;
+}
+
+#wrong::after {
+    position: relative;
+    bottom: 12px;
+    left: 4px;
+    display: block;
+    content: '';
+    width: 15px;
+    height: 2px;
+    animation: cursor_wrong .5s infinite;
+}
+
+@keyframes cursor_wrong {
+    0% {background-color: pink;}
+}
+*/
+#words {
+    font-size: 30px;
+    color: white;
+    resize: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-color: rgb(39, 39, 39);
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
 #display {
-    width: 400px;
-    height: 400px; 
+    /* resize: none; don't show resize tool */
+    position: relative;
+    text-align: justify;
+    margin: auto;
+    display: block;
+    background-color: black;
+    color: white;
+    width: 560px; /* need to account for 20px padding on left and right */
+    height: 250px; 
+    overflow: hidden;
+    overflow-y: auto;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px; /* top, right, bottom, left */
+}
+
+.display-wrong {
+    background-color: pink;
+    /* color: rgba(0,0,0,0.5); */
+}
+
+#display::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+#display::-webkit-scrollbar-track {
+    background: var(--text-primary);
+}
+
+#display::-webkit-scrollbar-thumb {
+    background: black;
+}
+   
+a {
+    text-decoration: none;
+    color: white;
 }
