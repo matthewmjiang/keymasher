@@ -1,4 +1,5 @@
-:root {
+/* here lies a bunch of variables that I use later */
+:root { 
     /* font-size: 16px; */
     /* font-family: 'Overpass Mono', monospace; */
     --text-primary: #dddddd;
@@ -8,7 +9,6 @@
     --bg-2: #303030;
     --bg-3: #1b1b1b;
     --width: 600px;
-
 }
 
 
@@ -103,29 +103,7 @@ main {
     /* 0%, 100% {background: transparent} */
     100% {background-color: var(--text-secondary);}
 }
-/*
-#wrong {
-    width: 600px;
-    height: 40px;
-    margin: auto;
-    position: relative;
-}
 
-#wrong::after {
-    position: relative;
-    bottom: 12px;
-    left: 4px;
-    display: block;
-    content: '';
-    width: 15px;
-    height: 2px;
-    animation: cursor_wrong .5s infinite;
-}
-
-@keyframes cursor_wrong {
-    0% {background-color: pink;}
-}
-*/
 #words {
     font-size: 30px;
     color: var(--text-primary);
@@ -144,7 +122,6 @@ main {
 
 
 #display {
-    /* resize: none; don't show resize tool */
     position: relative;
     text-align: justify;
     margin: auto;
